@@ -1,0 +1,135 @@
+#include "stdio.h"
+#include "conio.h"
+#include "math.h"
+#include "windows.h"
+
+void main()
+
+{
+	double x, y, z;
+	
+	printf("\n Vao x va y: ");
+	scanf("%lf%lf", &x,&y);
+	z = pow(x, y);
+	printf("\n x = %0.2lf\n y = %0.2lf\n z = %0.2lf", x, y, z);
+	getch();
+
+}
+
+#include "stdio.h"
+#include "conio.h"
+
+void main()
+{
+	int a, c, t; float b, d;
+	a = 123; c = -4685; t = 12;
+	b = -45.855; d = 123.425;
+	
+	printf("\n \`Chuc cac ban may man\`\n");
+	printf("\n \"Chuc cac ban may man\"");
+	printf("\n\n \\Chuc cac ban may man\\\n");
+	printf("\n \"Tong san luong hang nam tang %2d%\"", t);
+	printf("\n\n %d%f%d%f", a, b, c, d);
+	printf("\n\n %6d%8.2f%7d%8.2f", a, b, c, d);
+	printf("\n\n a = %d, b = %0.2f, c = %d, d = %.2f", \
+		a, b, c, d);
+	getch();
+}
+
+#include "stdio.h"
+#include "conio.h"
+
+void main()
+{
+	printf("\n Hang dau phay dong: %10.2f %10.2f %10.2f %10.2f",
+		14689.2e-4, -0.125666e3, 23468e-2, 1e4);
+	printf("\n\n Hang nguyen he 6 va he 16:\
+		   %7d %7d %7d %7d %7d", 0345, 0xa9, 0xa9, 0Xa9, 0Xa9);
+	printf("%c %c %6c %6c %6c %6c %6c%",
+		'\n', '\n', 'a', '\141', '\'', '\"', '\\');
+	printf("\n\n %10c%s",' ', "Chuc may man!");
+	getch();
+}
+
+ 
+\\Quy tac khoi dau
+
+#include "stdio.h"
+#include "conio.h"
+int a = 41, t[][3] =
+{
+	{25, 30, 40},
+	{145, 83, 10}
+};
+float y[8] = {-45.8, 32.5};
+float x[10][12] =
+{
+	{-125.3, 48.9},
+	{145.6, 83.5}
+};
+
+char n1[] = {'T', 'h', 'u', '\0'};
+char n2[] = "Thu";
+char n3[10] = {'T', 'h', 'u', '\0'};
+char n4[10] = "Thu";
+
+void main()
+{
+	printf("\na = %d, t(1,2) = %d, t(1,1) = %d",
+		a, t[1][2], t[1][1]);
+	printf("\n\x(1, 1) = %0.2f, x(2, 0) %0.2f",
+		x[1][1], x[2][0]);
+	printf("\n%s%8s%8s%8s", n1, n2, n3, n4);
+	getch();
+}
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+#include "stdio.h"
+#include "conio.h"
+static int a = 41, t[][3] =
+{
+	{25, 30, 40},
+	{145, 83, 10}
+};
+
+static float y[8] = {-45.8, 32.5};
+static float x[10][2] =
+{
+	{-125.3, 48.9},
+	{145.6, 83.5}
+};
+
+static char n1[] = {'T', 'h', 'u', '\0'};
+static char n2[] = "Thu";
+static char n3[10] = {'T', 'h', 'u', '\0'};
+static char n4[10] = "Thu";
+
+void main()
+{
+	printf("\n a = %d, t(1, 2) = %d, t(1, 1) = %d",
+		a, t[1][2], t[1][1] );
+	printf("\n x(1, 1) = %0.2f, x(2, 0) = %0.2f",
+		x[1][1], x[2][0] );
+	printf("\n %s%8s%8s%8s", n1, n2, n3, n4);
+	getch();
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+Tinh tich 4 so nhap tu ban phim
+
+#include "stdio.h"
+#include "conio.h"
+#include "math.h"
+
+void main()
+{
+	float a, b, c, d, e;
+	printf("Nhap cac so thuc = ");
+	scanf("\n %f%f%f%f", &a, &b, &c, &d);
+	e = (a * b * c* d);
+	printf("Tich 4 so thuc = %f", e);
+	
+	getch();
+	
+}

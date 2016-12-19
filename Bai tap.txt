@@ -1,0 +1,155 @@
+#include "stdio.h"
+#include "conio.h"
+
+void main()
+{
+	printf("Hello World");
+	getch();
+}
+
+/////////////////////////////////////////
+
+#include "stdio.h"
+#include "conio.h"
+
+void main()
+{
+	float c, f;
+	printf("\n Nhap vao nhiet do F = ");
+	scanf ("%f", &f);
+	c = (5*(f - 32) / 9);
+	printf("Nhiet do khi doi sang do C la c = %f", c);
+	getch();
+}
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+#include "stdio.h"
+#include "conio.h"
+
+
+void main()
+{
+	float a, b, t;
+	printf("\n Nhap vao 2 so a va b: ");
+	scanf("%f%f", &a, &b);
+	t = (a*a) + (b*b);
+	printf("\n Tong binh phuong 2 so a, b la: t = %0.2f", t);
+	getch();
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+#include "stdio.h"
+#include "conio.h"
+
+
+void main()
+{
+	int a, b;
+	printf("\n Nhap 2 so a va b : ");
+	scanf("%d%d", &a, &b);
+	if(a > b)
+	{
+		printf("\n So lon nhat la a = %d", a);
+	}
+	else
+	{
+		printf("\n So lon nhat la b = %d", b);
+	}
+	getch();
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+
+#include "stdio.h"
+#include "conio.h"
+float max(float x, float y);
+
+
+void main()
+{
+	float MAX;
+	float a, b, c, d, e, f;
+	printf("\n Nhap a > f di:");
+	scanf("%f%f%f%f%f%f", &a, &b, &c, &d, &e, &f);
+	MAX = max(max(a,b), max(max(c,d), max(e,f)));
+	printf("\nMAX(%f, %f, %f, %f, %f, %f) = %f", a, b, c, d, e, f, MAX);
+    getch();
+}
+float max(float x, float y)
+{
+    float max;
+    if(x > y)
+        max = x;
+    else
+        max = y;
+    return max;
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+#include "stdio.h"
+#include "conio.h"
+
+
+
+void main()
+{
+	int a, b;
+	printf("\n Nhap vao a va b");
+	scanf("%d%d", &a, &b);
+	if( a == 0)
+	{
+		printf("\n Phuong trinh vo nghiem");
+	}
+	else
+	{
+		printf("\n Phuong trinh co 1 nghiem:  %d", (-b)/a);
+	}
+	getch();
+}
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+#include "stdio.h"
+#include "conio.h"
+#include "math.h"
+void main()
+{
+    int a, b, c;
+    float delta = 0;
+    float x1, x2;
+    printf("\n Nhap vao a, b, c: ");
+	scanf("%d%d%d", &a, &b, &c);
+    if(a == 0)
+    {
+        if(b == 0)
+            printf("\n Phuong trinh vo nghiem");
+        else
+            printf("\n Nghiem cua pt x = %f", float(-c)/b);
+    }
+    else
+    {
+        delta = b*b - 4*a*c;
+        if(delta == 0)
+            printf("\n Phuong trinh co nghiem kep = %f", float(-b)/(2*a));
+        else if(delta < 0)
+            printf("\n Phuong trinh vo nghiem");
+        else
+        {
+            x1 = (-b + sqrt(delta))/(2*a);
+            x2 = (-b - sqrt(delta))/(2*a);
+            printf("\n Nghiem thu nhat x1 = %f", x1);
+            printf("\n Nghiem thu hai x2 = %f", x2);
+        }
+    }
+    getch();
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\

@@ -1,0 +1,1303 @@
+#include "stdio.h"
+#include "conio.h"
+
+
+void main()
+{
+	int a = 10, b = 1245, m;
+	m = printf("\n A = %4d B = %d", a, b);
+	getch();
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+#include "stdio.h"
+#include "conio.h"
+
+
+void main()
+{
+	float a[8][6];
+	int i, j;
+	fprintf(stdprn, "\n %20c MA TRAN A \n\n\n", 32);
+	for (i = 0; i < 8, ++j)
+		fprintf(stdprn, "%10.2f", a[i][j]);
+	fprintf(stdprn, "\n");
+	getch();
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+#include "stdio.h"
+#include "conio.h"
+
+
+void main()
+{
+	int x = 10;
+	long y = 3478925;
+	printf("\n x = %1d \n y = %d", x, y);
+	getch();
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+#include "stdio.h"
+#include "conio.h"
+
+
+void main()
+{
+	int x = 360, y = -1;
+	long y1 = -11;
+	char *vb = "Programmer";
+	double dx = 3.14159265;
+	printf("\n x = %010d \n x = %-010d \n x = %10o \n x = %010o", x, x, x, x);
+	printf("\n x = %-10d \n x = %-010x", x, x);
+	printf("\n\n y = %10d \n y = %10u \n y = %10o \n y = %10x", y, y, y, y);
+	printf("\n\n y1 = %ld \n y1 = %10lu \n y1 = %10lo \n y1 = %-10lx", y1, y1, y1, y1);
+	printf("\n\n dx = %010f \n dx = %010.3f \n dx = %-010.3f", dx, dx, dx);
+	printf("\n dx = %10e \n dx = %10.2e", dx, dx);
+	printf("\n\n %10s \n %10.7s \n %-10.7s \n %010.4s \n %10.0s", vb, vb, vb, vb, vb);
+	printf("\n %0.3s \n %-010.3s", vb, vb);
+	getch();
+}
+
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+#include "stdio.h"
+#include "conio.h"
+
+
+void main()
+{
+	int a, b;
+	float x ,y;
+	char ch[10];
+	scanf("%3d%4d%3f%f%2s", &a, &b, &x, &y, &ch);
+	printf("\n a = %10d \n b = %10d \n x = %8.2f \n y = %8.2f \n %s", a, b, x, y, ch);
+	getch();
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+#include "stdio.h"
+#include "conio.h"
+
+
+void main()
+{
+	int a;
+	long b;
+	float x;
+	double y;
+	printf("\n vao a b x y");
+	scanf("%d%ld%f%lf", &a, &b, &x, &y);
+	printf("\n a = %10d \n b = %10ld \n x = %8.2f \n y = %8.2f", a, b, x, y);
+	getch();
+}
+
+//////////////////////////////////////////////////////////////////////////////////
+
+
+#include "stdio.h"
+#include "conio.h"
+
+
+void main()
+{
+	int a, b, c;
+	long x, y, z;
+	double s, t, u, v;
+	printf("\n Vao a, b, c:");
+	scanf("%d%o%x", &a, &b, &c);
+	printf("\n Vao x, y, z:");
+	scanf("%ld%le%lx", &x, &y, &z);
+	printf("\n Vao s, t, u, v:");
+	scanf("%lf%le%lf%le", &s, &t, &u, &v);
+	printf("\n a = %4d \n b = %4d \n c = %4d", a, b, c);
+	printf("\n x = %10ld \n y = %10ld \n z = %10ld", x, y, z);
+	printf("\n s = %10.2e \n t = %10.2e \n u = %10.2g \n v = %10.2g", s, t, u, v);
+	getch();
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+
+#include "stdio.h"
+#include "conio.h"
+
+
+void main()
+{
+	char s1[10], s2[10], s3[20], s4[20];
+	printf("\n Vao mot day ky tu:");
+	scanf("%3s%s%[^,]%[123456789,]", s1, s2, s3, s4);
+	printf("\n%s%s%s%s", s1, s2, s3, s4);
+	getch();
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+#include "stdio.h"
+#include "conio.h"
+
+
+void main()
+{
+	int a;
+	long b;
+	char ch[20], ck[20];
+	printf("Nhap a, mot day ky tu va b:");
+	scanf("%d%[0123456789 ]%[^0123456789 ]%5ld", &a, ch, ck, &b);
+	printf("\n a = %3d b = %10ld ch = %s ck = %6s", a, b, ch, ck);
+	getch();
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+#include "stdio.h"
+#include "conio.h"
+
+void main()
+{
+	int a, b;
+	float x, y;
+	printf("\n Doc 6 so (3int, 3 float):");
+	scanf("%d%*d%d%f%*f%f",&a, &b, &x, &y);
+	printf("\n a = %d \n b = %d \n x = %10.3e \n y = %10.6e", a, b, x, y);
+	getch();
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+#include "stdio.h"
+#include "conio.h"
+
+void main()
+{
+	char ht[25];
+	int t;
+	printf("\n Tuoi: ");
+	scanf("%d", &t);
+	printf("\n Ho ten: ");
+	fflush(stdin);
+	gets(ht);
+
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+#include "stdio.h"
+#include "conio.h"
+
+void main()
+{
+	int a, b;
+	scanf("%d", &a);
+	scanf("%d", &b);
+	getch();
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+#include "stdio.h"
+#include "conio.h"
+
+void main()
+{
+	int a;
+	char ch, ht[25];
+	scanf("%d", &a);
+	ch = getchar();
+	gets(ht);
+}
+
+/////////////////////////
+
+#include "stdio.h"
+#include "conio.h"
+
+void main()
+{
+	int n, ch;
+	n = 20;
+	while(n>0)
+	{
+		--n;
+		putch(7);
+	}
+	while(kbhit())
+	{
+		ch = getch();
+		putch(ch);
+	}
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+#include "stdio.h"
+#include "conio.h"
+
+void main()
+{
+	tiep:
+	putch(7);
+	if (!kbhit()) goto tiep;
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+#include "stdio.h"
+#include "conio.h"
+
+void main()
+{
+	tiep:
+	putch(7);
+	if (!kbhit())
+	{
+		goto tiep;
+	}
+	if (getch()!=7)
+	{
+		goto tiep;
+	}
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+#include "stdio.h"
+#include "conio.h"
+
+void main()
+{
+	char *n = "*";
+	printf("\n ***********");
+	printf("\n ***** *****");
+	printf("\n ****   ****");
+	printf("\n ***     ***");
+	printf("\n **       **");
+	printf("\n ***********");
+	getch();
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+#include "stdio.h"
+#include "conio.h"
+
+void main()
+{
+	tiep:
+	
+ printf("\n NGON NGU LAP TRINH");
+ int c = 1, d = 1;
+ 
+    for ( c = 1 ; c <= 12767 ; c++ )
+       for ( d = 1 ; d <= 12767 ; d++ )
+       {}
+ if(!kbhit())
+
+ goto tiep;
+ 
+ if (getch()!=67)
+	 tiep1:
+ {
+  printf("\n TURBO C");
+ }
+
+ for ( c = 1 ; c <= 12767 ; c++ )
+       for ( d = 1 ; d <= 12767 ; d++ )
+       {}
+ if(!kbhit())
+	   goto tiep1;
+
+
+
+
+
+
+ if (getch()!=80);
+ tiep2:
+ {
+  printf("\n TURBO PASCAL");
+ }
+ for ( c = 1 ; c <= 12767 ; c++ )
+       for ( d = 1 ; d <= 12767 ; d++ )
+       {}
+	   if(!kbhit())
+	   goto tiep2;
+
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+#include "stdio.h"
+#include "conio.h"
+
+void main()
+{
+	float a, b, max;
+	int k;
+	tt:
+	printf("\n Vao hai so a va b: ");
+	scanf("\n %f%f", &a, &b);
+	if (a>b) max=a;
+	else max=b;
+	printf("\n a = %0.2f \n b = %0.2f \n max = %0.2f", a, b, max);
+	printf("\n Co tiep tuc khong, c/k?");
+	k = getch();
+	if(k=='c' || k=='C') goto tt;
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+#include "stdio.h"
+#include "conio.h"
+
+void main()
+{
+	float a, b, max;
+	int k;
+	tt:
+	printf("\n Vao hai so a va b: ");
+	scanf("%f%f", &a, &b);
+	max = a;
+	if(b>max) max=b;
+	printf("\n a = %0.2f \n b = %0.2f \n max = %0.2f", a, b, max);
+	printf("\n Co tiep tuc ko cu, c/k?");
+	k = getch();
+	if(k=='c' || k=='C') goto tt;
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+#include "stdio.h"
+#include "conio.h"
+
+void main()
+{
+	int ma;
+	tt:
+	printf("\n Ma = ");
+	scanf("\n %d", &ma);
+	printf("\n Ma = %2d", ma);
+	if(ma==1)
+		printf("\n , So cap");
+	else if(ma==2)
+		printf("\n , Trung cap");
+	else if(ma==3)
+		printf("\n , Dai hoc");
+	else if(ma==4)
+		printf("\n , Cao hoc");
+	else if(ma==5)
+		printf("\n , Pho tien sy");
+	else if(ma==6)
+		printf("\n , Tien sy");
+	else
+	{
+		printf("\n , Nhap ma sai! Nhap lai ma tu 1-6.");
+		goto tt;
+	}
+	getch();
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+#include "stdio.h"
+#include "conio.h"
+#include "math.h"
+
+void main()
+{
+	float a, b, c, d;
+	float x1, x2;
+	printf("\n Nhap vao a, b, c: ");
+	scanf("\n %f%f%f", &a, &b, &c);
+	d = b * b - 4 * a * c;
+	if (d<0.0)
+		printf("\n Phuong trinh vo nghiem");
+	else
+	{
+		if (d==0)
+			printf("\n Phuong trinh co nghiem kep, \ x = %0.2f", -b/(2*a));
+		else
+		{
+			x1 = (-b - sqrt(d)) / (2 * a);
+			x2 = (-b + sqrt(d)) / (2 * a);
+			printf("\n x1 = %0.2f x2 = %0.2f", x1, x2);
+		}
+	}
+	getch();
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+#include "stdio.h"
+#include "conio.h"
+
+
+void main()
+{
+	int ma;
+	tt:
+	printf("\n Ma = ");
+	scanf("%d", &ma);
+	switch(ma)
+	{
+		case 1:
+			printf("\n , So cap");
+			break;
+		case 2:
+			printf("\n , Trung cap");
+			break;
+		case 3:
+			printf("\n , Dai hoc");
+			break;
+		case 4:
+			printf("\n , Cao hoc");
+			break;
+		case 5:
+			printf("\n , Pho tien sy");
+			break;
+		case 6:
+			printf("\n , Tien sy");
+			break;
+		default:
+			{
+				printf("\n Nhap ma sai Nhap lai ma tu 1-6");
+				goto tt;
+			}
+
+	}
+	getch();
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+#include "stdio.h"
+#include "conio.h"
+
+#define SIZE 2
+void main()
+{
+	
+	int z[SIZE][SIZE], n;
+	
+	
+	/*printf("Nhap gia tri trong mang: ");
+
+	scanf("%d%d%d%d",&z[0][0], &z[0][1], &z[1][0], &z[1][1]);
+		
+	printf("\n%d", z[0][0]);
+	printf("%d", z[0][1]);
+	printf("\n%d", z[1][0]);
+	printf("%d", z[1][1]);
+*/
+	for(int i = 0; i < SIZE; i++) {
+		for(int j = 0; j < SIZE; j++) {
+			scanf("%d", &z[i][j]);
+		}
+	}
+
+
+	for(int i = 0; i < SIZE; i++){
+		for(int j = 0; j < SIZE; j++) {
+			printf("%d", z[i][j]);
+		}
+		printf("\n");
+	}
+
+	getch();
+}
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+
+#include "stdio.h"
+#include "conio.h"
+
+
+void main()
+{
+	float a, b, c, max;
+	printf("\n Nhap vao 3 so");
+	scanf("%f%f%f", &a, &b, &c);
+	max = a;
+	if(max<b)
+		max = b;
+	if(max<c)
+		max=c;
+	printf("\n Gia tri lon nhat = %.1f", max);
+	getch();
+}
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+#include "stdio.h"
+#include "conio.h"
+float x[] = {63.2, -45.6, 70.1, 3.6, 14.5};
+int n = sizeof(x) / sizeof(float);
+
+void main()
+{
+	int i, j;
+	float c;
+	for (i=0, j=n-1; i<j; ++i, --j)
+	{
+		c = x[i];
+		x[i] = x[j];
+		x[j] = c;
+	}
+	printf("\n Day ket qua: \n");
+	for (i=0; i<n; ++i)
+	printf("%8.2f", x[i]);
+	getch();
+}
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+
+#include "stdio.h"
+#include "conio.h"
+float x[] = {63.2, -45.6, 70.1, 3.6, 14.5};
+
+
+void main()
+{
+	int n = sizeof(x) / sizeof(float);
+	int m = sizeof(x);
+	int l = sizeof(float);
+	int i, j;
+	float c;
+	for (i=0, j=n-1; i<j; ++i, --j)
+	
+	printf("\n Day ket qua: \n");
+	for (j=4; j>=0; --j)
+	{
+		printf("%8.2f", x[j]);
+	}
+	getch();
+}
+///////////////////////////////////////////////////////////////
+
+#include "stdio.h"
+#include "conio.h"
+float x[] = {63.2, -45.6, 70.1, 3.6, 14.5};
+int n = sizeof(x) / sizeof(float);
+void main()
+{
+	int i=-1, j;
+	float c;
+	for ( ; j=n-1 - ++i, i<j;)
+	{
+		c = x[i];
+		x[i] = x[j];
+		x[j] = c;
+	}
+	printf("\n Day ket qua: \n");
+	for(i=0; i-n;)
+	{
+		printf("%8.2f", x[i++]);
+	}
+	getch();
+}
+
+////////////////////////////////////////////////////////////////////////
+
+
+#include "stdio.h"
+#include "conio.h"
+float x[] = {63.2, -45.6, 70.1, 3.6, 14.5};
+int n = sizeof(x) / sizeof(float);
+void main()
+{
+	int i = 0 , j=n-1;
+	float c;
+	for(; ; )
+	{
+		c = x[i];
+		x[i] = x[j];
+		x[j] = c;
+		if(++i >= --j)
+			goto tt;
+	}
+	tt: printf("\n Day ket qua: \n");
+	for (i=-1; i++<n-1; printf("%8.2f", x[i]));
+	getch();
+}
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+#include "stdio.h"
+#include "conio.h"
+float x[] = {63.2, -45.6, 70.1, 3.6, 14.5};
+int n = sizeof(x) / sizeof(float);
+void main()
+{
+	int i = 0, j = n -1;
+	float c;
+	for( ; ; )
+	{
+		c = x[i];
+		x[i] = x[j];
+		x[j] = c;
+		if(++i >= --j)
+			break;
+	}
+	printf("\n Day ket qua \n");
+	for(i=-1; i++<n-1; printf("%8.2f", x[i]));
+	getch();
+}
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+#include "stdio.h"
+#include "conio.h"
+
+int a[] = {6, 1, 4, 3, 2, 5, 1, 6, 4, 5, 2, 3, 1, 3, 5};
+
+void main()
+{
+	int i, trendh = 0, trench = 0, trenpts = 0, ts = 0;
+	for(i=0; i<15; ++i)
+		switch(a[i])
+		{
+			case 6: ts++;
+			case 5: trenpts++;
+			case 4: trench++;
+			case 3: trendh++;
+		}
+	printf("\n So can bo tu dai hoc tro len la: %d", trendh);
+	printf("\n So can bo tu cao hoc tro len la: %d", trench);
+	printf("\n So can bo tu pts tro len la: %d", trenpts);
+	printf("\n So can bo co hoc vi tien sy la: %d", ts);
+	getch();
+}
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+#include "stdio.h"
+#include "conio.h"
+float a[3][4] = 
+	{
+	{15, 46, 3.5, 6.3},
+	{34, 0, -25, 35 },
+	{1, -13, 46, -38 }
+	};
+void main()
+{
+	int i, j;
+	for(i=0; i<3; ++i)
+		for(j=0; j<4; ++j)
+			if(a[i][j]<0) goto tim_thay;
+	printf("\n Ma tran khong co phan tu am.");
+	goto ket_thuc;
+	tim_thay:
+	printf("\n Phan tu am dau tien la a(%d, %d) = %0.2f", i+1, j+1, a[i][j]);
+	ket_thuc: ;
+	getch();
+
+}
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+#include "stdio.h"
+#include "conio.h"
+float a[3][4] = 
+	{
+	{15, 46, 3.5, 6.3},
+	{34, 0, -25, 35 },
+	{1, -13, 46, -38 }
+	};
+void main()
+{
+	int i, j;
+	for (i=0; i<3; ++i)
+	{
+		if (a[i][j]<0)
+			break;
+		if (j<4)
+			break;
+	}
+	if (i<3 && j<4)
+		printf("\n Phan tu am dau tien la a(%d, %d) = %0.2f", i+1, j+1, a[i][j]);
+	else
+		printf("\n Ma tran khong co phan tu am. ");
+	getch();
+}
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+#include "stdio.h"
+#include "conio.h"
+float a[3][4] = 
+	{
+	{15, 46, 3.5, 6.3},
+	{341, 0, -25, 35 },
+	{1, 13, 46, 31 }
+	};
+void main()
+{
+	int i, j, cotmax[3], cotmin[3];
+	float max[3], min[3];
+	for (i = 0; i<3; ++i)
+	{
+		max[i] = min[i] = a[i][0];
+		cotmax[i] = cotmin[i] = 0;
+		for(j=1; j<4; ++j)
+		{
+			if (max[i]<a[i][j])
+			{
+				max[i] = a[i][j];
+				cotmax[i] = j;
+			}
+			if (min[i]>a[i][j])
+			{
+				min[i] = a[i][j];
+				cotmin[i] = j;
+			}
+		}
+	}
+	for (i=0; i<3; ++i)
+		printf("\n Hang: %d max = a(%d, %d) = %5.2f\
+			   min = a(%d, %d) = %5.2f", i+1, i+1, cotmax[i]+1, max[i], i+1, cotmin[i]+1, min[i]);
+	getch();
+		
+}
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+#include "stdio.h"
+#include "conio.h"
+float x[] = {4, 6, 8, 3.5},
+	  y[] = {2.6, 3.2, 4, 7};
+void main()
+{
+	float s = 0.0;
+	int i = -1;
+	while(++i<4)
+		s += x[i] * y[i];
+	printf("\n Tich vo huong = %0.2f", s);
+	getch();
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+#include "stdio.h"
+#include "conio.h"
+float x[] = {4, 6, 8, 3.5},
+	  y[] = {2.6, 3.2, 4, 7};
+void main()
+{
+	float s = 0;
+	int i = 0;
+	while (1)
+	{
+		s+=x[i] * y[i];
+		if (i++ >= 4) goto xong;
+	}
+	xong: printf("\n Tich vo huong = %8.2f", s);
+	getch();
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+#include "stdio.h"
+#include "conio.h"
+float a[] =  {10, 8, 2, 98, 13, 8, 24,  78, 98, 19, 75, 20};
+
+int n = sizeof(a) / sizeof(float);
+	
+void main()
+{
+	int i, j, max, min;
+	 max = min = a[0];
+	
+	for ( i = 0 ; i < 12 ; ++i)
+
+	{
+		
+		
+		
+		if (max < a[i])
+		{
+			max=a[i];
+		}
+
+		if (min>a[i])
+		{
+			min = a[i];
+		}
+		
+	}
+
+	
+	
+	printf("\n So lon nhat nho nhat la: \n max = %d \n min = %d ", max, min);
+	
+
+	getch();
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+#include "stdio.h"
+#include "conio.h"
+float a[3][4] = 
+	{
+	{15, 46, 3.5, 6.3},
+	{341, 0, -25, 35 },
+	{1, 13, 46, 31 }
+	};
+
+
+void main()
+{
+	int i, j, max, min;
+	max = min = a[0][0];
+
+	for(i=0 ;i<3 ;++i)
+	{
+		for(j=0; j<4; ++j)
+		{
+			if(max<a[i][j])
+			{
+				max = a[i][j];
+			}
+
+			if(min>a[i][j])
+			{
+				min = a[i][j];
+			}
+		}
+	}
+	printf("Gia tri lon nhat va nho nhat la: max = %d \n min = %d", max, min);
+	
+	getch();
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+KHONG CHAY
+
+#include <math.h>
+#include "stdio.h"
+#include "conio.h"
+
+void main()
+{
+	double a, xn, c;
+	int ch;
+	tt:
+	printf("\n a = ");
+	scanf("%lf", &a);
+	if (a < 0)
+	{
+		printf("\n a < 0 ?");
+		goto kt;
+	}
+	if ( a == 0)
+	{
+		xn = 0;
+		goto kq;
+	}
+	xn = a;
+	do
+	{
+		c = xn;
+		xn = ( xn * xn + a) / (2 * xn);
+	}
+	while (fasb(( xn - c) / c) >= 1e-5);
+		kq: printf("\n a = %8.2f sqrt(a) = %8.2f", a, xn);
+	printf("\n Co tiep tuc khong? - c/k");
+	ch = getch();
+	if ( ch =='c' || ch == 'C')
+		goto tt;
+	kt: ;
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+#include "stdio.h"
+#include "conio.h"
+#include "math.h"
+
+
+void main()
+{
+	int i, ng_to = 1;
+	float n;
+	printf("\n Nhap vao 1 so de");
+	scanf("%f", &n);
+	for (i = 2; i <= sqrt(n); ++i)
+		if ((fmod(n,i)) == 0 )
+		{
+			ng_to = 0;
+			break;
+		}
+	if(ng_to)
+		printf("\n %f la nguyen to", n);
+	else
+		printf("\n %f la hop so", n);
+	getch();
+}
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+#include "stdio.h"
+#include "conio.h"
+#include "math.h"
+int a[10];
+
+
+void main()
+{
+	int i, t = 0, h= 0 ;
+	
+	
+	
+	for (i=0; i<5; i++) 
+	{
+		scanf("%d", &a[i]);
+	}
+	
+	for(i=0 ;i<5; ++i)
+		
+		if(a[i] > 0)
+		{
+			t += a[i];
+		}
+		else
+		{
+			h += a[i];
+		}
+
+	
+	printf("\n Tong duong \n t = %d ", t);
+	
+	printf("\n Tong am \n t = %d ", h);
+	
+	getch();
+
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+#include "stdio.h"
+#include "conio.h"
+#include "math.h"
+int a[5];
+
+void main()
+{
+	int i , am = a[0];
+	for (i=0; i<5; ++i) 
+	{
+		scanf("%d", &a[i]);
+	}
+	
+	for(i = 0; i < 5; i++)
+	{
+		if(a[i] < 0)
+		{
+			am = a[i];
+		}
+	}
+	printf("\n So am cuoi cung la: %d", am);
+	getch();
+		
+}
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+#include "stdio.h"
+#include "conio.h"
+#include "math.h"
+int a[] = { 1, 3, 5, 7, 9},
+	b[] = { 2, 4, 6, 8, 10};
+
+void main()
+{
+	int i, j, x, y;
+	x = a[0];
+	y = b[0];
+	
+	for(i = 0; i < 5; ++i)
+	{
+		for(j = 0; j < 5; ++j)
+			
+		{
+			if(a[i]< b[j])
+			{
+				x = a[i];
+				y = b[j];
+				printf(" %d", x);
+				printf(" %d", y);
+				break;
+			}
+		}
+			
+	}
+	getch();
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+#include "stdio.h"
+#include "conio.h"
+
+int a[] = {23, 4, 65, 78, 43, 12, 0, 90};
+int n = sizeof(a) / sizeof(float);
+
+void main()
+{
+	int i, j, k,c, min;
+	
+	bool swap;
+
+	for(j = 0 ; j < n ; j++)
+	{
+		min = a[j];
+		swap = false;
+		for(i = j ; i < n; ++i)
+		{
+
+			if(min > a[i])
+			{
+				min = a[i];
+				k = i;
+				swap = true;
+			}
+		}
+
+		//a[j] a[k]
+		if (swap == true)
+		{
+			 c = a[j];
+			 a[j] = a[k];
+			 a[k] = c;
+		}
+
+		printf(" %d", min);
+		
+		
+	
+	}
+	
+	
+	getch();
+}
+		
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+#include "stdio.h"
+#include "conio.h"
+
+int a[] = {23, 4, -65, 78, 43, 12, 0, 90, -1, 7, -45};
+int n = sizeof(a) / sizeof(float);
+
+void main()
+{
+	int i , j, am, duong;
+	am = duong = a[0];
+	bool swap;
+	for(i=0 ; i < n; i++)
+	{
+		swap = false;
+		if (a[i] < 0)
+		{
+			am= a[i];
+			swap = true;
+		}
+		
+		if (swap == true)
+		{
+			printf(" %d", am);
+		}
+		
+		
+	}
+		printf("\n");
+		for(i=0 ; i < n; i++)
+	{
+		swap = false;
+
+		if(a[i] > 0)
+		{
+			duong = a[i];
+			swap = true;
+		}
+		if( swap == true)
+		{
+			printf(" %d", duong);
+		}
+	}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\	
+
+#include "stdio.h"
+#include "conio.h"
+
+void main()
+{
+	int i;
+	for( i = 23; i <255; i++)
+	{
+		printf(" %c", i);
+	}
+	getch();
+}
+			
+		
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+#include "stdio.h"
+#include "conio.h"
+
+float max3s( float a, float b, float c);
+
+void main()
+{
+	float x, y, z;
+	int ch;
+	tt: printf("\n Nhap vao 3 so");
+	scanf("%f%f%f", &x, &y, &z);
+	printf("\n x = %0.2f \ny = %0.2f \nz = %0.2f \n max = %8.2f", x, y, z, max3s(x, y, z));
+	printf("Co tiep tuc khong? - C/H");
+	ch = (getch());
+	if( ch == 'c' || ch == 'C') goto tt;
+}
+
+float max3s( float a, float b, float c)
+{
+	float max;
+	max = a>b?a:b;
+	return (max>c?max:c);
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+void hoan_vi(float *px, float *py)
+{
+	float z;
+	z = *px;
+	*px = *py;
+	*py = z;
+}
+
+#include "stdio.h"
+#include "conio.h"
+
+void main()
+{
+	float a = 7.6, b = 13.5;
+	hoan_vi(&a, &b);
+	printf("\n a = %0.2f b = %0.2f", a, b);
+	getch();
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+CHUONG 5
+
+
+#include "stdio.h"
+#include "conio.h"
+
+void main()
+{
+	float a[50][50];
+	int m, n, i, j;
+	printf("\n Vao m va n: ");
+	scanf("%d%d", &m, &n);
+	for(i = 1; i < m; ++i)
+	{
+		for(j = 1; j <= n; ++j)
+		{
+			printf("\n a[%d][%d]= ", i, j);
+			scanf("%f", (float*)a + i*50 + j);
+		}
+		getch();
+	}
+}
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+#include "stdio.h"
+#include "conio.h"
+ 
+
+ 
+int main() 
+{
+    float a[3][2], b[2][4], c[3][4], x;
+	int i, j, k;
+	for(i = 0; i < 3; ++i)
+	{
+		for(j = 0; j < 2; ++j)
+		{
+			printf("\n a[%d][%d] =", i, j);
+			scanf("%f", &x);
+			a[i][j] = x;
+		}
+	}
+	for(i = 0; i < 2; ++i)
+	{
+		for(j = 0; j < 4; ++j)
+		{
+			printf("\n b[%d][%d] =", i, j);
+			scanf("%f", &x);
+			b[i][j] = x;
+		}
+	}
+
+	for(i = 0; i < 3; ++i)
+	{
+		for(j = 0; j < 4; ++j)
+		{
+			c[i][j] = 0;
+			for(k = 0; k < 2; ++k)
+			{
+				c[i][j] += a[i][k]*b[k][j];
+			}
+		}
+	}
+	printf("\n MA TRAN B \n");
+	for(i = 0; i < 2; ++i)
+	{
+		for(j = 0; j < 4; j++)
+		{
+			printf("%8.2fc", c[i][j], j == 3?'\n':' ');
+		}
+	}
+	getch();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

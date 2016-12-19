@@ -1,0 +1,39 @@
+#include "stdio.h"
+#include "conio.h"
+#include "math.h"
+
+int ptb2(float a, float b, float c, float *x1, float *x2);
+
+void main()
+{
+	int s;
+	float a, b, c, x1, x2;
+	printf("\n Vao a b c: ");
+	scanf("%f%f%f", &a, &b, &c);
+	s = ptb2(a, b, c, &x1, &x2);
+	if(s == 0)
+	{
+		printf("\n a = 0 ");
+	}
+	else if(s == -1)
+	{
+		printf("\n delta < 0 ");
+	}
+	else
+	{
+		printf("\n x1 = %0.2f x2 = %0.2f", x1, x2);
+	}
+	getch();
+}
+
+int ptb2(float a, float b, float c, float *x1, float *x2)
+{
+	float delta;
+	if(a == 0) return 0 ;
+	delta = (b*b)-(4*a*c);
+	if(delta < 0) return -1;
+	*x1 = (-b - sqrt(delta))/(2*a);
+	*x2 = (-b + sqrt(delta))/(2*a);
+	return 1;
+}
+
